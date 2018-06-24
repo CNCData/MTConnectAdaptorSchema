@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.4" xmlns:x="urn:MTConnectDevicesEx:1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.4" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.4 http://www.mtconnect.org/schemas/MTConnectDevices_1.4.xsd">
+  <Devices>
+    <Device id="BROTHER_0001" name="brother" uuid="000-FFF-000-FFF" iso841Class="6">
+      <Description manufacturer="BROTHER"/>
+      <DataItems>
+        <DataItem category="EVENT" id="BROTHER_0002" type="AVAILABILITY" name="avail"/>
+      </DataItems>
+      <Components>
+        <Axes id="BROTHER_0003" name="Axes">
+          <Components>
+            <Rotary id="BROTHER_0004" name="C" nativeName="S">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0005" name="spindleSpeed" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE" />
+              </DataItems>
+            </Rotary>
+            <Linear id="BROTHER_0010" name="X">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0011" name="axisXPos" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="BROTHER_0012" name="axisXDtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" />
+              </DataItems>
+            </Linear>
+            <Linear id="BROTHER_0013" name="Y">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0014" name="axisYPos" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="BROTHER_0015" name="axisYDtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" />
+              </DataItems>
+            </Linear>
+            <Linear id="BROTHER_0016" name="Z">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0017" name="axisZPos" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="BROTHER_0018" name="axisZDtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" />
+              </DataItems>
+            </Linear>
+            <Rotary id="BROTHER_0007" name="A">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0008" name="axis4Pos" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="BROTHER_0009" name="axis4Dtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" />
+              </DataItems>
+            </Rotary>
+            <Linear id="BROTHER_0019" name="5">
+              <DataItems>
+                <DataItem category="SAMPLE" id="BROTHER_0020" name="axis5Pos" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="BROTHER_0021" name="axis5Dtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" />
+              </DataItems>
+            </Linear>
+          </Components>
+        </Axes>
+        <Controller id="BROTHER_0022" name="controller">
+          <Components>
+            <Path id="BROTHER_0024" name="path">
+              <DataItems>
+                <DataItem category="EVENT" id="BROTHER_0025" name="mode" type="CONTROLLER_MODE" />
+                <DataItem category="EVENT" id="BROTHER_0026" name="blockSkip" type="ACTUATOR_STATE" />
+                <DataItem category="EVENT" id="BROTHER_0027" name="dryRun" type="ACTUATOR_STATE" />
+                <DataItem category="EVENT" id="BROTHER_0028" name="opSkip" type="ACTUATOR_STATE" />
+                <!--<DataItem category="EVENT" id="BROTHER_0029" name="rapidTraverse" type="x:RAPID" />-->
+                <DataItem category="EVENT" id="BROTHER_0030" name="palletSelect" type="PALLET_ID" />
+                <DataItem category="EVENT" id="BROTHER_0031" name="singleOp" type="ACTUATOR_STATE" />
+                <DataItem category="EVENT" id="BROTHER_0032" name="programNumber" type="PROGRAM" />
+                <DataItem category="EVENT" id="BROTHER_0033" name="execution" type="EXECUTION" />
+                <DataItem category="EVENT" id="BROTHER_0034" name="tool" type="TOOL_ID" />
+                <DataItem category="EVENT" id="BROTHER_0035" name="toolMagazine" type="TOOL_ID" />
+                <DataItem category="EVENT" id="BROTHER_0036" name="toolNext" type="TOOL_ID" />
+                <DataItem category="SAMPLE" id="BROTHER_0037" name="axisFeedOv" nativeUnits="PERCENT" type="PATH_FEEDRATE" units="PERCENT" />
+                <DataItem category="EVENT" id="BROTHER_0038" name="alarmText" type="MESSAGE" />
+                <DataItem category="EVENT" type="PART_COUNT" name="partCountAct" subType="ACTUAL" id="BROTHER_0039" />
+                <DataItem category="EVENT" type="PART_COUNT" name="partCountTarget" subType="GOOD" id="BROTHER_0040" />
+                <DataItem category="EVENT" type="PART_COUNT" name="partCount" subType="ACTUAL" id="BROTHER_0041" />
+                <DataItem category="EVENT" id="BROTHER_0023" name="eStop" type="EMERGENCY_STOP" />
+                <DataItem category="EVENT" id="BROTHER_0006" name="spindleOv" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT" />
+              </DataItems>
+            </Path>
+          </Components>
+        </Controller>
+        <Systems id="BROTHER_0047" name="systems">
+          <Components>
+            <Enclosure id="BROTHER_0149" name="enclosure">
+              <DataItems>
+                <DataItem category="EVENT" id="BROTHER_0045" name="MainDoorState" type="DOOR_STATE" compositionId="BROTHER_1145" />
+                <DataItem category="EVENT" id="BROTHER_0043" name="InnerDoorState" type="DOOR_STATE" compositionId="BROTHER_1143" />
+                <DataItem category="EVENT" id="BROTHER_0046" name="SideDoorState" type="DOOR_STATE" compositionId="BROTHER_1146" />
+                <DataItem category="EVENT" id="BROTHER_1945" name="InterlockDoorState" type="COMPOSITION_STATE" subType="ACTION" compositionId="BROTHER_1144"></DataItem>
+              </DataItems>
+              <Compositions>
+                <Composition type="DOOR" id="BROTHER_1145" name="mainDoor"></Composition>
+                <Composition type="DOOR" id="BROTHER_1143" name="innerDoor"></Composition>
+                <Composition type="DOOR" id="BROTHER_1146" name="sideDoor"></Composition>
+                <Composition type="DOOR" id="BROTHER_1144" name="doorInterlock"></Composition>
+              </Compositions>
+            </Enclosure>
+            <Coolant id="BROTHER_0049" name="coolant">
+              <DataItems>
+                <DataItem category="EVENT" id="BROTHER_0050" name="CoolantPumpRunning" type="COMPOSITION_STATE" subType="SWITCHED" compositionId="BROTHER_1150" />
+              </DataItems>
+              <Compositions>
+                <Composition id="BROTHER_1150" name="CoolantPump" type="PUMP" />
+              </Compositions>
+            </Coolant>
+          </Components>
+        </Systems>
+        <Auxiliaries id="BROTHER_0247" name="auxiliaries">
+          <Components>
+            <WasteDisposal id="BROTHER_0249" name="chipConveyor">
+              <DataItems>
+                <DataItem category="EVENT" id="BROTHER_0250" name="ChipConveyorRunning" type="COMPOSITION_STATE" subType="SWITCHED" compositionId="BROTHER_0450" />
+              </DataItems>
+              <Compositions>
+                <Composition id="BROTHER_0450" name="ChipConveyorMotor" type="MOTOR" />
+              </Compositions>
+            </WasteDisposal>
+          </Components>
+        </Auxiliaries>
+      </Components>
+    </Device>
+  </Devices>
+</MTConnectDevices>
