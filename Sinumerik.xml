@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.4" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.4 http://www.mtconnect.org/schemas/MTConnectDevices_1.4.xsd">
+  <Devices>
+    <Device id="MC0061_0001" iso841Class="6" name="MC0061" sampleInterval="10" uuid="000-FFF-000-FFF">
+      <Description manufacturer="Haas" />
+      <DataItems>
+        <DataItem category="EVENT" id="MC0061_0002" type="AVAILABILITY" name="avail" />
+      </DataItems>
+      <Components>
+        <Axes id="MC0061_0003" name="Axes">
+          <Components>
+            <Rotary id="MC0061_0004" name="SPINDLE">
+              <DataItems>
+                <DataItem category="SAMPLE" id="MC0061_0005" name="SpSpeed" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="SPINDLE_SPEED" units="REVOLUTION/MINUTE" />
+                <DataItem category="SAMPLE" id="MC0061_0006" name="Spovr" nativeUnits="PERCENT" subType="OVERRIDE" type="SPINDLE_SPEED" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0007" name="SpcmdSpeed" nativeUnits="REVOLUTION/MINUTE" subType="COMMANDED" type="SPINDLE_SPEED" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0008" name="spload" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+              </DataItems>
+            </Rotary>
+            <Rotary id="MC0061_0009" name="A">
+              <DataItems>
+                <DataItem category="SAMPLE" id="MC0061_0010" name="Aact" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0011" name="Acom" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0012" name="Aload" nativeUnits="PERCENT" type="LOAD" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0017" name="Adtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="REMAINING" type="POSITION" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0018" name="Atwof" type="DISPLACEMENT" subType="ACTUAL" nativeUnits="MILLIMETER" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0019" name="Atmp"  type="TEMPERATURE" subType="ACTUAL" units="DEGREE" xmlns="" />
+              </DataItems>
+            </Rotary>
+            <Linear id="MC0061_0013" name="X">
+              <DataItems> 
+                <DataItem category="SAMPLE" id="MC0061_0014" name="Xact" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0015" name="Xcom" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0016" name="Xload" nativeUnits="PERCENT" type="LOAD" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0017" name="Xdtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="REMAINING" type="POSITION" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0018" name="Xtwof" type="DISPLACEMENT" subType="ACTUAL" nativeUnits="MILLIMETER" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0019" name="Xtmp"  type="TEMPERATURE" subType="ACTUAL" units="DEGREE" xmlns="" />
+              </DataItems>
+            </Linear>
+            <Linear id="MC0061_0020" name="Y">
+              <DataItems>
+                <DataItem category="SAMPLE" id="MC0061_0021" name="Yact" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0022" name="Ycom" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0023" name="Yload" nativeUnits="PERCENT" type="LOAD" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0017" name="Ydtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="REMAINING" type="POSITION" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0018" name="Ytwof" type="DISPLACEMENT" subType="ACTUAL" nativeUnits="MILLIMETER" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0019" name="Ytmp"  type="TEMPERATURE" subType="ACTUAL" units="DEGREE" xmlns="" />
+              </DataItems>
+            </Linear>
+            <Linear id="MC0061_0024" name="Z">
+              <DataItems>
+                <DataItem category="SAMPLE" id="MC0061_0025" name="Zact" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0026" name="Zcom" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0027" name="Zload" nativeUnits="PERCENT" type="LOAD" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0017" name="Zdtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="REMAINING" type="POSITION" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0018" name="Ztwof" type="DISPLACEMENT" subType="ACTUAL" nativeUnits="MILLIMETER" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0019" name="Ztmp"  type="TEMPERATURE" subType="ACTUAL" units="DEGREE" xmlns="" />
+            
+              </DataItems>
+            </Linear>
+            <Linear id="MC0061_0028" name="C">
+              <DataItems>
+                <DataItem category="SAMPLE" id="MC0061_0029" name="Cact" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0030" name="Ccom" nativeUnits="MILLIMETER" subType="COMMANDED" type="POSITION" units="MILLIMETER" />
+                <DataItem category="SAMPLE" id="MC0061_0031" name="Cload" nativeUnits="PERCENT" type="LOAD" units="PERCENT" />
+                <DataItem category="SAMPLE" id="MC0061_0017" name="Cdtg" coordinateSystem="MACHINE" nativeUnits="MILLIMETER" subType="REMAINING" type="POSITION" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0018" name="Ctwof" type="DISPLACEMENT" subType="ACTUAL" nativeUnits="MILLIMETER" xmlns="" />
+                <DataItem category="SAMPLE" id="MC0061_0019" name="Ctmp"  type="TEMPERATURE" subType="ACTUAL" units="DEGREE" xmlns="" />   
+              </DataItems>
+            </Linear>
+          </Components>
+        </Axes>
+        <Controller id="MC0061_0032" name="controller">
+          <DataItems>
+            <DataItem category="EVENT" id="MC0061_0033" name="msg" type="MESSAGE" />
+            <DataItem category="EVENT" id="MC0061_0034" type="EMERGENCY_STOP" />
+          </DataItems>
+          <Components>
+            <Path id="MC0061_0035" name="path">
+              <DataItems>
+                <DataItem category="EVENT" id="MC0061_0036" name="block" type="BLOCK" />
+                <DataItem category="EVENT" id="MC0061_0037" name="mode" type="CONTROLLER_MODE" />
+                <DataItem category="EVENT" id="MC0061_0038" name="line" type="LINE" />
+                <DataItem category="EVENT" id="MC0061_0039" name="program" type="PROGRAM" />
+                <DataItem category="EVENT" id="MC0061_0040" name="execution" type="EXECUTION" />
+                <DataItem category="EVENT" id="MC0061_0041" name="toolId" type="TOOL_ID" />
+                <DataItem category="SAMPLE" id="MC0061_0042" name="Fovr" nativeUnits="PERCENT" type="PATH_FEEDRATE"  units="PERCENT"/>
+                <DataItem category="EVENT" id="MC0061_0043" name="almTxt"  type="MESSAGE" />
+              </DataItems>
+            </Path>
+          </Components>
+        </Controller>
+        <Systems id="MC0061_0044" name="systems">
+          <Components>
+            <Electric id="MC0061_0045" name="electric">
+              <DataItems>
+                <DataItem category="EVENT" id="MC0061_0046" name="power" type="POWER_STATE" />
+                <DataItem category="SAMPLE" id="MC0061_0047" name="pwrXw" units="WATT" type="POWER_STATE" />
+                <DataItem category="SAMPLE" id="MC0061_0048" name="pwrYw" units="WATT" type="WATT_SECOND" />
+                <DataItem category="SAMPLE" id="MC0061_0049" name="pwrZw" units="WATT" type="WATT_SECOND" />
+                <DataItem category="SAMPLE" id="MC0061_0050" name="pwrAw" units="WATT" type="WATT_SECOND" />
+                <DataItem category="SAMPLE" id="MC0061_0051" name="pwrSpw" units="WATT" type="WATT_SECOND" />
+                <DataItem category="SAMPLE" id="MC0061_0052" name="pwrCw" units="WATT" type="WATT_SECOND" />
+                <DataItem category="SAMPLE" name="PwrXi" type="AMPERAGE" id="MC0061_0053" subType="ACTUAL" xmlns="">
+                <DataItem category="SAMPLE" name="PwrXv" type="AMPERAGE" id="MC0061_0053" subType="ACTUAL" xmlns="">
+                </DataItem>
+              </DataItems>
+            </Electric>
+          </Components>
+        </Systems>
+      </Components>
+    </Device>
+  </Devices>
+</MTConnectDevices>
